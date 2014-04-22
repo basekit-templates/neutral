@@ -1,0 +1,146 @@
+{
+    "name":"Neutral",
+    "thumbnail":"neutral.png",
+    "screenshot":"neutral.png",
+    "tags": {
+    "en": ["clean", "menu", "ecommerce", "shop"],
+    "es": ["limpio", "menú", "ecommerce", "tienda"],
+    "br": ["limpo", "menu", "ecommerce", "loja"]
+    },
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#f4f1e9",
+            "color2":"#fdfcfa",
+            "color3":"#ec7474",
+            "color4":"#868584",
+            "color5":"#616161",
+            "color6":"#868584",
+            "color7":"#f4f1e9"
+        },
+        "Swatch 2": {
+            "color1":"#f7f5f2",
+            "color2":"#ffffff",
+            "color3":"#5EBBBA",
+            "color4":"#5EBBBA",
+            "color5":"#868584",
+            "color6":"#41807F",
+            "color7":"#B0E7E8"
+        },
+        "Swatch 3": {
+            "color1":"#f7f5f2",
+            "color2":"#ffffff",
+            "color3":"#58765A",
+            "color4":"#58765A",
+            "color5":"#868584",
+            "color6":"#415943",
+            "color7":"#BBEDBF"
+        },
+        "Swatch 4": {
+            "color1":"#f7f5f2",
+            "color2":"#ffffff",
+            "color3":"#FF9B51",
+            "color4":"#FF9B51",
+            "color5":"#7A6753",
+            "color6":"#8F420A",
+            "color7":"#FF9B51"
+        },
+        "Swatch 5": {
+            "color1":"#f7f5f2",
+            "color2":"#ffffff",
+            "color3":"#4E5974",
+            "color4":"#4E5974",
+            "color5":"#797D87",
+            "color6":"#797D87",
+            "color7":"#D0D9E7"
+        }
+    },
+    "fontSwatch": {
+       "title": "Oswald",
+        "font1": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "28px",
+            "font-weight": "200",
+            "line-height": "40px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "26px",
+            "font-weight": "inherit",
+            "line-height": "38px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "22px",
+            "font-weight": "400",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "24px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "@color-swatch6",
+            "color-hover": "darken(@color-swatch6,20%)",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch7",
+            "background-color-hover": "@color-swatch7"
+        },
+        "font7": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "28px",
+            "color": "@color-swatch2",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,5%)"
+        },
+        "font8": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "28px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "13px",
+            "font-weight": "400",
+            "line-height": "25px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "24px",
+            "font-weight": "300",
+            "line-height": "36px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        }
+    }
+}
