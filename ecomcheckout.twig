@@ -1,0 +1,30 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bk-pt-ecomcheckout">
+
+<header class="bk-header">
+    <div class="companyheader wrapper clearfix">
+        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+    </div><!--end wrapper clearfix-->
+    
+</header>
+
+{{widget('extendednavigation', 'navigationheader', {})|raw}}
+
+<div class="main wrapper clearfix">
+    {{zone('main')|raw}}
+</div> 
+
+<footer class="bk-footer">
+    <div class="wrapper clearfix">
+        {{widget('content', 'footercolumn1content', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
+        {{widget('socialicons', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+    </div>
+</footer>
+
+</div>
+
+{% endblock %}
