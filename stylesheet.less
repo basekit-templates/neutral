@@ -522,7 +522,7 @@ body {
     -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow:    0px 5px 4px 0px rgba(0, 0, 0, 0.15);
     box-shadow:         0px 5px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     @media @tablet {
         margin-bottom: 2.5em;
     }
@@ -611,6 +611,83 @@ body {
    =============================== */
 
 .widget.ecomproductslist {
+    .productlist-display-form {
+        width: 66.5%;
+        margin: 2% 0 2% 3%;
+        display: inline-block;
+        @media @tablet {
+            width: 97%;
+        }
+        @media @mobile {
+            background-color: darken(@color-swatch1,5%);
+            padding: 2em 1em 0;
+            margin-left: 0;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .form-group {
+            width: auto;
+            margin-right: 1%;
+            display: inline-block;
+            @media @tablet {
+                width: 30%;
+                margin-right: 2.5%;
+            }
+            @media @mobile {
+                width: 100%;
+            }
+            label[for="productlist-sort"] {
+                display: block;
+                width: 25%;
+                display: inline-block;
+                @media @tablet {
+                    width: 100%;
+                }
+            }
+            label {
+                display: none;
+            }
+            select {
+                cursor: pointer;
+                -webkit-appearance: none;
+                -webkit-border-radius: 0;
+                position: relative;
+                background-image: image('/images/arrow-down.png');
+                background-repeat: no-repeat;
+                background-position: right 12px center;
+                margin-bottom: 12px;
+                padding: 8px 33px 8px 8px;
+                border: none;
+                background-color: @color-swatch2;
+                color: @color-swatch5;
+                width: 100%;
+                @media @mobile {
+                    border: none;
+                    background-color: darken(@color-swatch1,12%);
+                }
+            }
+            &:first-child select {
+                width: 73%;
+                @media @tablet {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .productlist-item-count {
+        width: 30%;
+        text-align: right;
+        display: inline-block;
+        margin-left: 0;
+        @media @tablet {
+            text-align: left;
+            width: 100%;
+            margin-left: 3%;
+        }
+        @media @mobile {
+            margin-left: 0;
+        }
+    }
     .ecom-productslist-product {
         .ecom-productslist-image-wrap {
             height:300px;
@@ -641,7 +718,11 @@ body {
     }
 }
 
-
+.svg {
+    .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select, select {
+        background-image: image('/images/arrow-down.svg');
+    }
+}
 
 /* ===============================
    MENU SECTIONS NAVIGATION
