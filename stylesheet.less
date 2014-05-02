@@ -648,6 +648,12 @@ body {
                 display: none;
             }
             select {
+                -moz-appearance: none;
+                text-indent: 0.01px;
+                text-overflow: '';
+                background-position: right 12px center;
+                background-position-x: 93%;
+                background-position-y: 55%;
                 cursor: pointer;
                 -webkit-appearance: none;
                 -webkit-border-radius: 0;
@@ -665,6 +671,9 @@ body {
                     border: none;
                     
                 }
+            }
+            select::-ms-expand {
+                display: none;
             }
             &:first-child select {
                 width: 73%;
