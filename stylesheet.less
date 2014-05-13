@@ -159,7 +159,7 @@ body {
     }
     .ecombasket-pull {
         width: 150px;
-        padding: 0.5em 2.2em 0.5em 0em;
+        padding: 0.4em 2.2em 0.4em 0em;
         position: absolute;
         right: 0;
         background-color: @font-swatch7-background-color;
@@ -455,8 +455,10 @@ body {
                     }
                     ul {
                         padding: 0;
+                        top: 26px;
                         @media @tablet {
                             margin-top: 13px;
+                            top: 26px;
                         }
                         li {
                             a {
@@ -1563,6 +1565,13 @@ hr {
         padding: 1em 0 2em;
         @media @tablet {
             padding: 1em;
+        }
+    }
+    .checkout-empty {
+        a {
+            color: @font-swatch7-color;
+            font-size: @font-swatch7-font-size;
+            font-family: @font-swatch7-font-family;
         }
     }
     table {
