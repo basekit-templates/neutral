@@ -608,11 +608,11 @@ body {
 
 .widget.ecomproductslist {
     .productlist-display-form {
-        width: 66.5%;
         margin: 2% 0 2% 3%;
         display: inline-block;
+        width: 66.5%;
         @media @tablet {
-            width: 97%;
+            width: 100%;
         }
         @media @mobile {
             background-color: darken(@color-swatch1,3%);
@@ -622,21 +622,18 @@ body {
             width: 100%;
         }
         .form-group {
-            width: auto;
             margin-right: 1%;
             display: inline-block;
             @media @tablet {
-                width: 30%;
                 margin-right: 2.5%;
             }
             @media @mobile {
                 width: 100%;
             }
             label[for="productlist-sort"] {
-                display: block;
-                width: 25%;
                 display: inline-block;
-                @media @tablet {
+                margin-right: 5px;
+                @media @mobile {
                     width: 100%;
                 }
             }
@@ -662,20 +659,13 @@ body {
                 border: none;
                 background-color: @color-swatch2;
                 color: @color-swatch5;
-                width: 100%;
                 @media @mobile {
                     border: none;
-                    
+                    width: 100%;
                 }
             }
             select::-ms-expand {
                 display: none;
-            }
-            &:first-child select {
-                width: 73%;
-                @media @tablet {
-                    width: 100%;
-                }
             }
         }
     }
