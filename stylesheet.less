@@ -696,6 +696,11 @@ body {
         }
     }
     .ecom-productslist-product {
+        &:hover {
+            .ecom-productlist-info .ecom-productslist-title {
+                color: @color-swatch3;
+            }
+        }
         .ecom-productslist-image-wrap {
             height:300px;
             background-position: center center;
@@ -716,8 +721,8 @@ body {
             box-shadow:         0px 5px 4px 0px rgba(0, 0, 0, 0.15);
             .ecom-productslist-title {
                 font-family: @font-swatch5-font-family;
-                font-size: bkscale(@font-swatch5-font-size,0.8);
-                line-height: bkscale(@font-swatch5-line-height,0.8);
+                font-size: @font-swatch5-font-size;
+                line-height: @font-swatch5-line-height;
                 font-weight: @font-swatch5-font-weight;
                 color: @font-swatch5-color;
                 letter-spacing: @font-swatch5-letter-spacing;
