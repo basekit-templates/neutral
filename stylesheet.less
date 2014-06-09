@@ -1549,6 +1549,12 @@ hr {
             .ecom-product-cattag {
                 span {
                    display: block;
+                    a {
+                    text-decoration: underline;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
                 }
                 @media @mobile {
                     background-color: @color-swatch2;
@@ -1557,7 +1563,6 @@ hr {
             }
         }
         .btn {
-            color: @font-swatch6-color;
             width: 70%;
             margin: 2.5em 0;
             @media only screen and (max-width: 1200px) { 
@@ -1582,10 +1587,18 @@ hr {
             }
             &:hover {
                 background-color: @font-swatch7-background-color-hover;
-                color: @font-swatch6-color-hover;
             }
         }
-
+        .ecom-product-go-to-checkout-btn {
+            background-color: transparent;
+            color: @color-swatch3;
+            text-decoration: underline;
+            padding: 0;
+            &:hover {
+                text-decoration: none;
+                background-color: transparent;
+            }
+        }
         .ecom-product-long-description {
             padding-top: 20px;
             width: 100%;
