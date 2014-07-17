@@ -637,15 +637,6 @@ body {
                 @media @mobile {
                     width: 100%;
                 }
-                label[for="productlist-sort"] {
-                    display: inline-block;
-                    @media @tablet {
-                        width: 100%;
-                    }
-                }
-                label[for="productlist-categories"], label[for="productlist-tags"] {
-                    display: none;
-                }
                 select[name="displayCount"] {
                     width: auto;
                     @media @mobile {
@@ -654,34 +645,21 @@ body {
                     }
                 }
                 select {
-                    -moz-appearance: none;
-                    text-indent: 0.01px;
-                    text-overflow: '';
-                    background-position: right 12px center;
-                    background-position-x: 93%;
-                    background-position-y: 55%;
                     cursor: pointer;
-                    -webkit-appearance: none;
                     -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    border-radius: 0;
                     position: relative;
-                    background-image: image('/images/arrow-down.png');
-                    background-repeat: no-repeat;
-                    background-position: right 12px center;
                     margin-bottom: 12px;
-                    padding: 8px 33px 8px 8px;
                     border: 1px solid darken(@color-swatch1,3%);
                     background-color: @color-swatch2;
                     color: @color-swatch5;
                     height: 35px;
-                    width: 100%;
                     @media @mobile {
                         width: 100%;
                         height: 45px;
                         border: 1px solid darken(@color-swatch1,8%);
                     }
-                }
-                select::-ms-expand {
-                    display: none;
                 }
                 &.productlist-search {
                     input {
@@ -755,11 +733,6 @@ body {
     }
 }
 
-.svg {
-    .widget.ecomproductslist .productlist-display-form .form-group select {
-        background-image: image('/images/arrow-down.svg');
-    }
-}
 
 
 /* ===============================
