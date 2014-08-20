@@ -347,19 +347,15 @@ body {
             margin: 0 auto;
             padding: 1.5em 0;
             @media @tablet {
-                /* Hidden until nav icon is clicked */
-                display: none;
-                /* Then these styles are applied */
                 width: 100%;
                 margin: 0;
                 padding: 50px 0 0;
             }
             li {
                 display: inline-block;
-                padding: 5px 0;
+                padding: 0;
                 @media @tablet {
                     width: 100%;
-                    padding: 1em 0;
                     border-bottom: 1px dotted fade(@color-swatch5, 25%);
                     background-color: @color-swatch1;
                 }
@@ -379,7 +375,6 @@ body {
                         border: 1px solid fade(@color-swatch6, 25%);
                         z-index: 500;
                         padding: 0;
-                        margin: 7px 0 0 0;
                         li {
                             display: block;
                             width: 100%;
@@ -396,7 +391,7 @@ body {
 
                 a {
                     display: block;
-                    padding: 0 15px;
+                    padding: 0;
                     font-family: @font-swatch6-font-family;
                     font-size: @font-swatch6-font-size;
                     font-weight: @font-swatch6-font-weight;
@@ -415,13 +410,16 @@ body {
                     }
                 }
 
+                .text {
+                    display: block;
+                    padding: 15px;
+                }
+
                 &.folder {
                     /* Folder dropdown arrow BG style goes Here */  
                     margin-right: 20px;            
                     cursor: pointer;
                     .text {
-                        display: block;
-                        padding: 0 15px;
                         font-family: @font-swatch6-font-family;
                         font-size: @font-swatch6-font-size;
                         font-weight: @font-swatch6-font-weight;
@@ -433,7 +431,10 @@ body {
                             content: "\25BC";
                             font-size: 5px;
                             position: absolute;
-                            top: 1px;
+                            top: 50%;
+                            height: 12px;
+                            line-height: 12px;
+                            margin-top: -6px;
                             display: block;
                             z-index: 9999999;
                             right: 0;
@@ -457,20 +458,18 @@ body {
                     }
                     ul {
                         padding: 0;
-                        top: 26px;
                         @media @tablet {
-                            margin-top: 13px;
-                            top: 26px;
+                            margin-top: 0;
                         }
                         li {
+                             border-top: 1px solid fade(@color-swatch6, 25%);
                             &:first-child {
                                 border-top: none;
                             }
                             a {
                                 .text {
-                                    padding: 0;
                                     &:after {
-                                        content: "";
+                                        display: none;
                                     }
                                 }
                             }
@@ -487,22 +486,23 @@ body {
                 @media @tablet {
                     display: block;
                     margin: 0;
-                    width: 20px;
-                    height: 44px;
+                    width: 100%;
+                    height: 48px;
                     position: absolute;
-                    top: 3px;
-                    left: 48.5%;
+                    top: 0;
+                    left: 0;
                     &:hover {
                        cursor: pointer;
                     }
                     &:after {
                         content: '';
                         position: absolute;
-                        width: 100%;
+                        width: 20px;
                         height: 3px;
                         background: @color-swatch5;
                         top: 15px;
-                        left: 0;
+                        left: 50%;
+                        margin-left: -10px;
                         box-shadow: 0 6px 0 @color-swatch5, 0 12px 0 @color-swatch5;
                     }
                 }
