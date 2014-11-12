@@ -284,7 +284,6 @@ body {
     }
     .ecombasket-pull {
         width: 150px;
-        padding: 0.4em 2.2em 0.4em 0em;
         position: absolute;
         right: 0;
         background-color: @font-swatch7-background-color;
@@ -297,7 +296,6 @@ body {
             text-align: center;
         }
         p, .basket-count {
-            text-align: right;
             @media @mobile {
                 padding: 0;
                 color: @font-swatch7-color;
@@ -742,6 +740,12 @@ body {
     margin: 0 0 20px;
 }
 
+button.btn {
+    &:hover {
+        background-color:@font-swatch7-background-color-hover;
+    }
+}
+
 /* ===============================
   ECOM - PRODUCTLIST
    =============================== */
@@ -757,7 +761,7 @@ body {
         .productlist-display-form {
             @media @mobile {
                 background-color: darken(@color-swatch1,5%);
-                padding: 2em 1em 0;
+                padding: 2em 1em 2em;
                 margin-bottom: 20px;
                 width: 100%;
             }
@@ -765,6 +769,7 @@ body {
                 display: inline-block;
                 @media @mobile {
                     width: 100%;
+                    margin-bottom:0;
                 }
                 select[name="displayCount"] {
                     width: auto;
@@ -856,8 +861,6 @@ body {
         }
         .ecom-productlist-price {
             color: @color-swatch3;
-            font-size: bkscale(@font-swatch5-font-size,1.1);
-            line-height: bkscale(@font-swatch5-line-height,1.1);
         }
     }
 }
@@ -1303,6 +1306,10 @@ body {
     height: 45px;
 }
 
+.widget.profile form fieldset label {
+    display:block;
+}
+
 /* ===============================
    TWITTER WIDGET
    =============================== */
@@ -1446,14 +1453,14 @@ body {
             &:after {
                 content: "\2190";
                 color: #fff;
-                top: 7px;
+                top: 9px;
             }
         }
         .btn-next {
             &:after {
                 content: "\2192";
                 color: #fff;
-                top: 7px;
+                top: 9px;
             }
         }
         /* Play Button */
@@ -1475,6 +1482,8 @@ body {
                 &:after {
                     font-size: 15px;
                     line-height: 36px;
+                    letter-spacing:2px;
+                    left:2px;
                 }
             }
         }
@@ -1609,7 +1618,6 @@ body {
         }
     }
     h2 {
-        padding: 1em 0;
         @media @mobile {
             padding: 1em 0 0;
         }
@@ -1668,6 +1676,9 @@ body {
             border: none;
             padding: 0 15px;
             height: 45px;
+            &:hover {
+                background-color:@font-swatch7-background-color-hover
+            }
         }
     }
 }
@@ -1806,7 +1817,21 @@ hr {
                     width: 100%;
                 }
                 select {
-                    -webkit-appearance: menulist;
+                        display: block;
+                        width: auto;
+                        height: 35px;
+                        margin-bottom: 12px;
+                        padding: 8px 33px 8px 8px;
+                        -webkit-border-radius: 0;
+                        -moz-border-radius: 0;
+                        border-radius: 0;
+                        border: 1px solid darken(@color-swatch1,10%);
+                        background-color: @color-swatch1;
+                        text-indent: 0.01px;
+                        text-overflow: '';
+                        color: @color-swatch5;
+                        cursor: pointer;
+                        border-color:darken(@color-swatch7,5%);
                 }
             }
             .ecom-product-cattag {
@@ -2120,7 +2145,9 @@ hr {
 }
 
 
-
+.widget.ecomproduct .ecom-product .btn {
+    margin: 0px 0 20px;
+}
 
 /* ===============================
   ECOM - CATEGORIES LIST
