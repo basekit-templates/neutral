@@ -451,6 +451,10 @@ body {
     border-bottom: none;
 }
 
+.widget.extendednavigation .bk-overlay {
+    width: 100%;
+}
+
 .widget.extendednavigation {
     .clearfix;
     max-width: 100%;
@@ -640,6 +644,11 @@ body {
 
 .widget .extendednavigation ul li.folder:after {
     display: none;
+}
+
+.widget .extendednavigation ul.align-right li.folder:after {
+    left: 5px;
+    right: inherit;
 }
 
 /* ===============================
@@ -1281,16 +1290,22 @@ button.btn {
   SIGN UP FORM & PROFILE FORM
    =============================== */
 
-.widget.signupform form, .widget.profile form {
+.widget.signupform form {
     background-color: @color-swatch2;
     padding: 4em;
-    -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow:    0px 5px 4px 0px rgba(0, 0, 0, 0.15);
-    box-shadow:         0px 5px 4px 0px rgba(0, 0, 0, 0.15);
     clear: both;
     margin: 1em 0;
     @media @mobile {
         padding: 2em;
+    }
+}
+
+.widget.profile form {
+    clear: both;
+    padding:0;
+    text-align:left;
+    @media @tablet {
+        text-align:center;
     }
 }
 
@@ -1308,6 +1323,12 @@ button.btn {
 
 .widget.profile form fieldset label {
     display:block;
+}
+
+.widget.profile form fieldset input {
+    @media @mobile {
+        min-width:0;
+    }
 }
 
 /* ===============================
@@ -1471,9 +1492,10 @@ button.btn {
             border-radius: 4px;
             left: 45%;
             top: 43%;
+            width:80px;
             &:after {
                 color: #fff;
-                letter-spacing: -4px;
+                letter-spacing: 1px;
                 top: 2px;
             }
             @media @mobile {
