@@ -9,6 +9,9 @@
     "es": ["limpio", "menú", "ecommerce", "tienda"],
     "br": ["limpo", "menu", "ecommerce", "loja"]
     },
+    "images":[
+        "images/feature-bg.jpg"
+    ],
     "colorSwatches":
     {
         "Swatch 1": {
